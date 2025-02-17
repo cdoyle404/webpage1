@@ -1,27 +1,10 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head class="Main">
         <title>My Webpage</title>
-        <style>
-          header {
-            background-color: black;
-            width: 100%;
-            padding: 30px;
-            color: aliceblue;
-          }
-          nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-          }
-          nav li {
-          margin-right: 30px;
-          }
-
-        </style>
+        <link rel="stylesheet" href="stylesheet.css">
     </head>
-    <body>
+    <body class="Main">
       <header>
         <nav>
           <ul>
@@ -30,7 +13,7 @@
             <li><a href="Pages/page3DOT.html">Page 3 Holder</a></li>
           </ul>
         </nav>
-        <h1>Home</h1>
+        <h1>Welcome to my Page</h1>
 
       </header>
         <h1>This will contain the information</h1>
@@ -69,25 +52,17 @@
     </body>
 
     <footer>
-      <style>
-        footer{
-          background-color: black;
-          color: azure;
-        }
-        form {
-          text-align: center;
-        }
-      </style>
       <form>
-        <p>Name</p>
-        <input type="text"/>
+        <p>Name<br>
+        <input type="text"/></p>
         <p>Favourite Page:<br>
         <input type="radio" name="option">HomeP
         <input type="radio" name="option">Page2
         <input type="radio" name="option">page3DOT
         </p>
-        <p>Feedback:</p>
-        <textarea cols="30" rows="5"></textarea>
+        <p>Feedback:<br>
+        <textarea cols="30" rows="5"></textarea></p>
       </form>
+      <button>Submit</button>
     </footer>
 </html>
