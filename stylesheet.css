@@ -1,9 +1,45 @@
 /* CSS Document */
 
-body{
+  body{
     background-color: #E7EDEB;
     color: #69A481;
     text-align: center;
+    display: flex;
+    flex-direction: column; /* Side-by-side layout */
+    position: relative;
+}
+aside{
+  text-align: left !important;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  background-color: #7C1F31;
+  width: 200px;
+  height: calc(100vh-233px);
+  position: fixed;
+  padding-top: 20px;
+  
+}
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 170px;
+  flex: 1;
+}
+main{
+  margin-left: 200px; 
+  padding: 20px;
+  flex-grow: 1; 
+  max-width: 800px;
+}
+
+.side_nav{
+  display: flex;
+  flex-direction: column;
+  
+}
+.side_nav li{
+  margin-bottom: 10px;
 }
 table{
     margin-left: auto;
@@ -13,12 +49,17 @@ header {
     background-color: #69A481;
     padding: 40px;
     color: #E7EDEB;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
   }
   nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
+    justify-content: center;
   }
   nav li {
   margin-right: 30px;
@@ -27,7 +68,13 @@ header {
   footer{
     background-color: #7C1F31;
     color: #E7EDEB;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
   }
   form {
     text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
   }
