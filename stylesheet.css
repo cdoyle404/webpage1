@@ -15,7 +15,7 @@ aside{
   flex-direction: column;
   background-color: #7C1F31;
   width: 200px;
-  height: calc(100vh-233px);
+  height: 100vh;
   position: fixed;
   padding-top: 20px;
   
