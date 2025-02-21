@@ -13,8 +13,9 @@ aside{
   list-style: none;
   display: flex;
   flex-direction: column;
-  background-color: #7C1F31;
-  width: 200px;
+  background-color: #988598;
+  color: #7C1F31;
+  width: 150px;
   height: 100vh;
   position: fixed;
   padding-top: 20px;
