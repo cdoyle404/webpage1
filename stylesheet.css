@@ -20,6 +20,11 @@ aside{
   padding-top: 20px;
   
 }
+.Page3{
+  background-image: url("Blended_Expsoure_final.jpg");
+  background-position: center;
+  background-size: cover;
+}
 .content-wrapper {
   display: flex;
   flex-direction: row;
