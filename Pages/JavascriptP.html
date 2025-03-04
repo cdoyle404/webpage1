@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<h1> This is my heading</h1>
+<h1 id="2"> This is my heading</h1>
+<button onclick="change()">Change me colour</button>
+<h1> This is my heading</h1>
+    </head>
+    <body>
+        <h1 id="result"></h1>
+        <button onclick="greet()"> Click Me!</button>
+        <input id="BOX">
+    </body>
+    <script>
+
+        var myVar = "Hello World what is the craic?";
+        var quantity = 3;
+        // Can only use Number, Boolean, String as primitive types.
+
+        document.write(myVar); //Writing to the page. 
+        alert("Hello World"); // popup
+
+        var num2 = 4;
+        var num3 = 5;
+
+        var result = num2 + num3 + quantity;
+        document.write(result);
+
+        var myInput;
+        myInput = prompt("Please enter your name!");
+        document.write("Hello " + myInput);
+
+
+        var no1;
+        var no2;
+        no1 = prompt("Please enter your number ;)");
+        no2 = Number(prompt("Please enter your number ;)"));
+        // Both methods for converting the strin input to A NUMBER
+        no1 = Number(no1);
+       
+        document.write(no1 + no2);
+        
+        var score = no1 + no2;
+
+        if (score > 40){
+            document.write("You Passed!");
+        } else {
+            document.write("Try Again!");
+        }
+
+        for (var i = 0; i <= no1; i++){
+            document.write(i + "<br>");
+        }
+        for (var i = 0; i <= no2; i++){
+            document.write(i);
+        }
+
+    </script>
+    <script>
+        function helloWorld(){
+            alert("Hello Function");
+        }
+      //  helloWorld(); Easy way to call the function.
+      // Using the button for the affects... blah blah
+
+
+      function getArea(width, height){
+        document.write(width * height);
+      }
+      document.write("<br>");
+
+      var area = getArea(no1, no2);
+//Allows us to keeps the value ;)
+      function getArea(width, height){
+        return width * height;
+      }
+
+    </script>
+    <script>
+        //DOM
+        var heading = document.getElementById("2").style.innerHTML;
+        var boxentry = document.getElementById("BOX").value;
+
+        function greet(){
+            var grote = document.getElementById("BOX").value;
+            document.getElementById("result").innerHTML = "What's fucking poppin " + grote
+        }
+
+        function change(){
+          //  document.getElementById("2").style.color = "blue";
+          //  document.getElementById("2").style.background = "black";
+          //  document.getElementById("2").style.border = "3px dashed red";
+          // Using the "var par ="" allows us to not keeps using the same long form
+          var par = document.getElementById("2").style;
+          par.background = "black"
+          par.color = "blue";
+          par.border = "3px dashed red";
+        }
+    </script>
+</html>
