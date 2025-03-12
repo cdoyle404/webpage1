@@ -16,10 +16,10 @@ aside{
   flex-direction: column;
   background-color: #988598;
   color: #7C1F31;
-  width: 150px;
+  width: 200px;
   height: 100vh;
   position: fixed;
-  padding-top: 20px;
+  padding-top: 40px;
   
 }
 .menuB{
@@ -67,12 +67,16 @@ table{
 }
 header {
     background-color: #69A481;
-    padding: 40px;
+    padding: 40px 40px 20px 40px;
     color: #E7EDEB;
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 100;
+  }
+  nav{
+    width: auto;
+    align-content: center;
   }
   nav ul {
     list-style: none;

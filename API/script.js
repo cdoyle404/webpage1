@@ -3,5 +3,5 @@ fetch('https://reqres.in/api/users')
 
 
 function buttonClick(){
-    alert("Button WOrks I Guess");
+    alert("Button Works I Guess");
 }
