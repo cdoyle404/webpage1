@@ -22,6 +22,19 @@ aside{
   padding-top: 20px;
   
 }
+.menuB{
+  height: 50px;
+  width: 50px;
+  align-items: flex-start;
+  display: flex;
+  padding: 0;
+  border: 0;
+}
+
+button{
+  color: #69A481;
+}
+
 .Page3{
   background-image: url("Blended_Expsoure_final.jpg");
   background-position: center;
